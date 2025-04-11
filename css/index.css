@@ -17,7 +17,7 @@ body {
 header {
     color: aliceblue;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .dayCard {
@@ -46,6 +46,16 @@ header {
     text-align: center;
     border: 1px solid #6d6d6d;
     border-radius: 10px;
+}
+
+.hourly-hour {
+    font-size: 15px;
+}
+
+.hourly-temp {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
 }
 
 .weather-icon {
