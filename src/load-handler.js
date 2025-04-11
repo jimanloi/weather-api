@@ -1,14 +1,10 @@
-import getData from '../apis/weatherData';
+import getData from '../apis/weather-data.js';
 import dom from './dom.js';
+import createComponents from './components.js';
 
 const loadHandler = async () => {
     const data = await getData();
-    const components = createComponents(data);
-    if (Array.isArray(components)) {
-        components.forEach((el) => dom.container.append(el));
-    } else {
-        dom.container.append(components);
-    }
+    const components = await createComponents(data);
+    components.forEach((component) => dom.container.appendChild(component));
 };
-
 export default loadHandler;
